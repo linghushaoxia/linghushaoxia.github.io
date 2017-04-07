@@ -1,0 +1,23 @@
+/* Effective stylesheet produced by snapshot save */
+body { margin: 0px; padding: 0px; background: rgb(21, 21, 21) url("../image/bkg.png") repeat scroll 0px 0px; color: rgb(234, 234, 234); font-size: 16px; line-height: 1.5; font-family: Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace; }
+.container { width: 90%; max-width: 600px; margin: 0px auto; }
+section { display: block; margin: 0px 0px 20px; }
+h1, h2, h3, h4, h5, h6 { margin: 0px 0px 20px; }
+header { background: rgba(0, 0, 0, 0.1) none repeat scroll 0% 0%; width: 100%; border-bottom: 1px dashed rgb(181, 232, 83); padding: 20px 0px; margin: 0px 0px 40px; }
+header h1 { font-size: 30px; line-height: 1.5; margin: 0px 0px 0px -40px; font-weight: bold; font-family: Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace; color: rgb(181, 232, 83); text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(181, 232, 83, 0.1), 0px 0px 10px rgba(181, 232, 83, 0.1); letter-spacing: -1px; }
+/* header h1::before { content: "./ "; font-size: 24px; } */
+header h2 { font-size: 18px; font-weight: 300; color: rgb(102, 102, 102); }
+#downloads .btn { display: inline-block; text-align: center; margin: 0px; }
+#main_content { width: 100%; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-family: Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace; color: rgb(181, 232, 83); letter-spacing: -0.03em; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(181, 232, 83, 0.1), 0px 0px 10px rgba(181, 232, 83, 0.1); }
+#main_content h1 { font-size: 30px; }
+#main_content h2 { font-size: 24px; }
+#main_content h3 { font-size: 18px; }
+ul li::before { content: ">>"; font-family: Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace; font-size: 13px; color: rgb(181, 232, 83); margin-left: -37px; margin-right: 21px; line-height: 16px; }
+.btn { display: inline-block; background: transparent -moz-linear-gradient(center top , rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3)) repeat scroll 0% 0%; padding: 8px 18px; border-radius: 50px; border-width: 2px; border-style: solid; border-color: black rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; color: rgba(255, 255, 255, 0.8); font-family: Helvetica,Arial,sans-serif; font-weight: bold; font-size: 13px; text-decoration: none; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset; }
+.btn:hover { background: transparent -moz-linear-gradient(center top , rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8)) repeat scroll 0% 0%; }
+.btn .icon { display: inline-block; width: 16px; height: 16px; margin: 1px 8px 0px 0px; float: left; }
+.btn-github .icon { opacity: 0.6; background: transparent url("../image/blacktocat.png") no-repeat scroll 0px 0px; }
+a { color: rgb(99, 192, 245); text-shadow: 0px 0px 5px rgba(104, 182, 255, 0.5); }
+.cf::before, .cf::after { content: ""; display: table; }
+.cf::after { clear: both; }
