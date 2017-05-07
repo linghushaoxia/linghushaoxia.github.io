@@ -1,3 +1,6 @@
+/**
+ * header页面和背景
+ */
 document.writeln("<!DOCTYPE html PUBLIC \'-//W3C//DTD HTML 4.01 Transitional//EN\' \'http://www.w3.org/TR/html4/loose.dtd\'>");
 document.writeln("<html>");
 document.writeln("<head>");
