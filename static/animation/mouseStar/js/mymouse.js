@@ -3989,11 +3989,11 @@
 			mouseY: 0,
 			init: function() {
 				for (i = 0; i < 1; i++) {
-					var j = "static/animation/mouseStar/images/subball" + (i + 1) + ".png";
+					var j = "https://linghushaoxia.github.io/static/animation/mouseStar/images/subball" + (i + 1) + ".png";
 					giffy_bp_0013.ballImageResource[i] = new Image;
 					giffy_bp_0013.ballImageResource[i].src = j
 				}
-				for (i = 0; i < 8; i++) j = "static/animation/mouseStar/images/subball" + (i + 1) + ".png", giffy_bp_0013.subBallImageResource[i] =
+				for (i = 0; i < 8; i++) j = "https://linghushaoxia.github.io/static/animation/mouseStar/images/subball" + (i + 1) + ".png", giffy_bp_0013.subBallImageResource[i] =
 					new Image, giffy_bp_0013.subBallImageResource[i].src = j;
 				for (i = 0; i < 20; i++) {
 					giffy_bp_0013.ball[i] = q("<div />", {
