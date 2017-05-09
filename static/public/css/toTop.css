@@ -9,7 +9,6 @@ p#back-to-top{
 p#back-to-top a{
     text-align:center;
     text-decoration:none;
-    color:#d1d1d1;
     display:block;
     width:64px;
     /*Use the transition property in css3 to add a gradient effect to the text in the jump link*/
