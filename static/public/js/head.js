@@ -1,6 +1,3 @@
-/**
- * header页面和背景
- */
 document.writeln("<!DOCTYPE html PUBLIC \'-//W3C//DTD HTML 4.01 Transitional//EN\' \'http://www.w3.org/TR/html4/loose.dtd\'>");
 document.writeln("<html>");
 document.writeln("<head>");
@@ -8,6 +5,8 @@ document.writeln("		<meta http-equiv=\'Content-Type\' content=\'text/html; chars
 document.writeln("		<meta name=\'keywords\' content=\'html5, html 5, video, audio, html5video, html 5 video, html 5 audio, flash, h.264, h264, mp4, mp3, wav, aac, web, internet\'/>");
 document.writeln("		<meta name=\'description\' content=\'The html5media project enables HTML5 video and audio tags in all major browsers. All it takes is a single line of code.\'/>");
 document.writeln("		<link rel=\'stylesheet\' href=\'https://linghushaoxia.github.io/static/templates/hacker/css/style.css\'>");
+document.writeln("		<link href=\'https://linghushaoxia.github.io/static/public/css/toTop.css\' rel=\'stylesheet\' />");
+document.writeln("		<script type=\'text/javascript\' src=\'http://ajax.microsoft.com/ajax/jQuery/jquery-1.7.2.min.js\'></script>");
 document.writeln("		<script type=\'text/javascript\' src=\'https://linghushaoxia.github.io/static/animation/mouseStar/js/mymouse.js\' id=\'mymouse\'></script>");
 document.writeln("	</head>");
 document.writeln("<body>");
@@ -16,5 +15,28 @@ document.writeln("	<div class=\'container\'>");
 document.writeln("	<h1>星辰大海</h1>");
 document.writeln("	</div>");
 document.writeln("	</header>");
+document.writeln("	<script type=\'text/javascript\'>");
+document.writeln("$(function(){");
+document.writeln("        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失");
+document.writeln("        $(function () {");
+document.writeln("            $(window).scroll(function(){");
+document.writeln("                if ($(window).scrollTop()>100){");
+document.writeln("                    $(\'#back-to-top\').fadeIn(1500);");
+document.writeln("                }");
+document.writeln("                else");
+document.writeln("                {");
+document.writeln("                    $(\'#back-to-top\').fadeOut(1500);");
+document.writeln("                }");
+document.writeln("            });");
+document.writeln(" ");
+document.writeln("            //当点击跳转链接后，回到页面顶部位置");
+document.writeln(" ");
+document.writeln("            $(\'#back-to-top\').click(function(){");
+document.writeln("                $(\'body,html\').animate({scrollTop:0},1000);");
+document.writeln("                return false;");
+document.writeln("            });");
+document.writeln("        });");
+document.writeln("    });");
+document.writeln("</script>");
 document.writeln("</body>");
 document.writeln("</html>");
