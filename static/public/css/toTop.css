@@ -12,7 +12,7 @@ p#back-to-top a{
     color:#d1d1d1;
     display:block;
     width:64px;
-    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    /*Use the transition property in css3 to add a gradient effect to the text in the jump link*/
     -moz-transition:color 1s;
     -webkit-transition:color 1s;
     -o-transition:color 1s;
@@ -27,7 +27,7 @@ p#back-to-top a span{
     height:64px;
     width:56px;
     margin-bottom:5px;
-    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+    /*Use the transition property in css3 to add a gradient effect to the <span> tag background color*/
     -moz-transition:background 1s;
     -webkit-transition:background 1s;
     -o-transition:background 1s;
