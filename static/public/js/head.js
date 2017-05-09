@@ -16,6 +16,7 @@ document.writeln("	<h1>星辰大海</h1>");
 document.writeln("	</div>");
 document.writeln("	</header>");
 document.writeln("	<script type=\'text/javascript\'>");
+document.writeln("$=jQuery.noConflict();");
 document.writeln("$(function(){");
 document.writeln("        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失");
 document.writeln("        $(function () {");
