@@ -5,11 +5,25 @@
 		<title>星辰大海</title>
 		<link href="https://linghushaoxia.github.io/static/public/css/common.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/head.js"></script>
-		<style  type="text/css" >
-		</style>
+		<style  type="text/css" ></style>
+		<script type="text/javascript">
+			//载入事件
+			window.onload = function() {
+				appendNumBR();
+			}
+			//追加空格
+			function appendNumBR(){
+				var br="";
+				for(i=0;i<18;i++){
+					br=br+"<br>";
+				}
+				document.getElementById("NumBR").innerHTML+=br;
+			}
+		</script>
 	</head>
 <body>	
 	<p id="back-to-top"><a href="#top"><span></span>返回顶部</a></p>
+	<h1></h1>
 	<div class="container">
 		<section id="main_content">
 			<p>
@@ -17,14 +31,21 @@
 					<a href="https://linghushaoxia.github.io/static/blog/2017/05/reflect-research.html">Java反射研究</a>
 					
 				</div>
+				<div class="index2blank">
+					<a href="https://linghushaoxia.github.io/static/blog/2017/11/eclipse-debug-jar-In-web-app.html">eclipse调试web应用依赖的第三方jar</a>
+					
+				</div>
 			</p>
-				
 		</section>
+		<div id="NumBR"></div>
+		<h3>-----------------------------------------------------------------------------</h3>
+	<h3>I never remember and think about the words in the dictionary and the manual. My head is used to remember and think about things that haven't been put in the book.</h3>
+	<h3>我从来不把安逸和快乐看作是生活目的的本身——这种伦理基础，我叫它猪栏的理想。</h3>
 	</div>
 	<!-- 背景音乐 -->
 	<!--<audio autoplay="autoplay">
 	  <source src="static/public/backMusic/RobinsonCrusoe.mp3" />
 	</audio>-->
+	
 </body>
 </html>
-
