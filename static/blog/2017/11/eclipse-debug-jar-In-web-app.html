@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="https://linghushaoxia.github.io/static/public/css/code-light/prism.css" rel="stylesheet" />
+	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/code-light/prism.js"></script>
+	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/head.js"></script>
+</head>
+<body>
+	<div class="container">
+	<h2>eclipse调试web应用依赖的第三方jar</h2>
+	<p>
+		<strong>摘要:</strong>
+	</p>
+	<p>
+		<strong>&nbsp;&nbsp; 解决大多数人提供的解决方案，不生效的情况下，遇到的问题。</strong>
+	</p>
+	<p>
+		<strong>&nbsp;&nbsp; 提到的解决方法，可以说是全球唯一的。</strong>
+	</p>
+	<p>
+		<strong>在看问题解决方法之前，你已经看到了以下相关提示或者错误,也使用了相关命令</strong>
+	</p>
+	<p>
+		<strong>&nbsp;&nbsp;&nbsp; <a>a)</a>Source not found，Edit Source Lookup Path</strong>
+	</p>
+	<p>
+		<strong>&nbsp; &nbsp; <a>b)</a>mvn dependency:sources -DdownloadSources=true</strong>
+	</p>
+	<p>
+		<strong>&nbsp; &nbsp; <a>c)</a>手动关联源码,Source Attachment</strong>
+	</p>
+	<p>
+		<strong>&nbsp; &nbsp; <a>d)</a>尝试各种即时反编译器<br />
+		</strong>
+	</p>
+	<p>
+		<strong><a>问题症状:</a></strong>
+	</p>
+	<p>
+		&nbsp;&nbsp; &nbsp;使用各种方案，关联源码后，调试起来，仍然不顺手，尤其是调试第三方框架的源码即使进入到断点了，可是实际上会跳转到源码标签页，无法实时打断点
+	</p>
+	<p>
+		如果，你遇到的问题是上述描述的问题，苦苦寻求解决方法而不得，继续往下看。
+	</p>
+	<p>
+		<strong><a>一、解决方法</a></strong>
+	</p>
+	<blockquote>
+		<p>
+			<strong><a>1、正常配置web项目，使用tomcat插件进行启动</a></strong>
+		</p>
+	</blockquote>
+	<blockquote>
+		<p>
+			<strong><a>1)</a>使用tomcat插件配置好的项目如下图，基本参数，就不细说了。</strong>
+		</p>
+	</blockquote>
+	<blockquote>
+		<p>
+			<img src="http://img.blog.csdn.net/20171103190134664?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcWlhb18xOTg5MTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="" /><br />
+			
+		</p>
+	</blockquote>
+	<p>
+		<strong><a>2)</a>添加jvm参数</strong>
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp; 切换到Main标签旁边的JRE标签，添加jvm参数
+	</p>
+	<p>
+		-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000
+	</p>
+	<p>
+		如图
+	</p>
+	<p>
+		<img src="http://img.blog.csdn.net/20171103190041261?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcWlhb18xOTg5MTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="" />
+	</p>
+	<p>
+		tomcat插件配置<br />
+		
+	</p>
+	<p>
+		<img src="http://img.blog.csdn.net/20171103192720391" alt="" /><br />
+		
+	</p>
+	<p>
+		<strong><a>3)</a>启动项目</a></strong>
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp; run项目，而非debug。添加的jvm参数，已经在监听端口，达到类debug的效果，直接run项目
+	</p>
+	<p>
+		<img src="http://img.blog.csdn.net/20171103190308741?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcWlhb18xOTg5MTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="" />
+	</p>
+	<p>
+		<br />
+		
+	</p>
+	<p>
+		<strong><a>2、eclipse远程调试，本地项目</a></strong>
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 远程调试，是调试远程服务器上的应用的。在本方法里面，远程服务器在逻辑上是远程应用，实际上是本地的应用。
+	</p>
+	<p>
+		<strong><a>1)</a>打开Debug Configures标签页，配置远程调试参数</strong>
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp; 配置远程项目对应的本地工程和填写远程的host和port。这一块的配置也不细说了。
+	</p>
+	<p>
+		<img src="http://img.blog.csdn.net/20171103190624198?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcWlhb18xOTg5MTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="" /><br />
+		
+	</p>
+	<p>
+		<strong><a>2)</a> Debug项目</strong>
+	</p>
+	<p>
+		&nbsp;&nbsp; 点击完Debug，项目的运行环境是这样子的：待调试项目以run方式，在运行；远程debug也在运行。
+	</p>
+	<p>
+		开始进行调试吧，项目依赖的jar，凡是关联了源码的，都可以进入到class视图的断点里，可以实时打断点。
+	</p>
+	<p>
+		<strong><a>二、相关问题说明</a></strong>
+	</p>
+	<p>
+		<strong><a>1、</a>eclispe管理的文件图标</strong>
+	</p>
+	<p>
+		<strong><a>a)</a>Source not found，源码未找到的时的图标</strong><br />
+		
+	</p>
+	<p>
+		<img src="http://img.blog.csdn.net/20171103191736174" alt="" />
+	</p>
+	<p>
+		<strong><a>b)</a>未编译源文件图标</strong><br />
+		
+	</p>
+	<p>
+		&nbsp;&nbsp; 显示的jar包里面的源码，此时源码并未和class关联起来，是一种“未编译”状态,eclipse只是以源码的形式显示它。
+	</p>
+	<p>
+		这种文件显示方式，如果预先在对应的class文件里面，打了断点，断点可以进入，但是无法显示断点位置，也无法实时打断点。<br />
+		
+	</p>
+	<p>
+		<img src="http://img.blog.csdn.net/20171103191834966" alt="" />
+	</p>
+	<p>
+		<strong><a>c)</a>关联了源码的class文件图标</strong><br />
+		
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp; 010，class文件显示状态，这类文件是eclipse管理的编译后的文件的视图，此时已经和源码关联了。这种显示方式在debug模式下，才可以实时打断点。<br />
+		
+	</p>
+	<p>
+		<img src="http://img.blog.csdn.net/20171103192001209" alt="" />
+	</p>
+	<p>
+		<br />
+		
+	</p>
+	<p>
+		<strong><a>三、问题分析</a></strong>
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp; 初步分析，问题出在tomcat插件上。
+	</p>
+	<p>
+		单进程的应用，只要使用maven dependency:sources关联源码后，eclipse自带的Class Viewer可以把源码和class文件关联起来，可以实时打断点。
+	</p>
+	<p>
+		而tomact插件发布的web应用，因为类加载器的原因，导致eclipse无法很好的控制调试器。
+	</p>
+	<p>
+		以上现象是事实存在的，原因则是推测的。
+	</p>
+	<p>
+		<br />
+		
+	</p>
+	<p>
+		<br />
+		
+	</p>
+	<p>
+		<strong><span style="color:#009900;">vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv<br />
+		</span></strong>
+	</p>
+	<p>
+		<strong><span style="color:#009900;">如果，你首次搜索就看到这个页面，那么祝贺你！<br />
+		如果，你历经千辛万苦，搜索了整个互联网，看到了这个页面，同样祝贺你！<br />
+		我来了，你的世界就亮了。</span></strong>
+	</p>
+	<p>
+		<strong><span style="color:#009900;">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span></strong><br />
+		
+	</p>
+</div>
+
+</body>
+</html>
