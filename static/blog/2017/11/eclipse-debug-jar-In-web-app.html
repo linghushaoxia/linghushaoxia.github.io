@@ -6,6 +6,22 @@
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/code-light/prism.js"></script>
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/head.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			var browserType=getBrowserType();
+			if (browserType=="Firefox") {
+				alert("Firefox浏览器可能无法看到图片,可以尝试使用其他浏览器。");
+			}
+		}
+		//获取浏览器类型
+		function getBrowserType(){
+			var userAgent=navigator.userAgent;
+			if (userAgent.indexOf("Firefox")>-1) {
+				return "Firefox";
+			}
+			return "UNKnow";
+		}
+	</script>
 </head>
 <body>
 	<div class="container">
