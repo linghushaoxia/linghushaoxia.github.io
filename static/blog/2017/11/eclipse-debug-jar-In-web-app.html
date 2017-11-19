@@ -9,7 +9,8 @@
 	<script type="text/javascript">
 		window.onload=function(){
 			var browserType=getBrowserType();
-			if (browserType=="Firefox") {
+			var firefox = "firefox";
+			if (browserType!=null&&firefox==browserType.toLowerCase()) {
 				alert("Firefox浏览器可能无法看到图片,可以尝试使用其他浏览器。");
 			}
 		}
