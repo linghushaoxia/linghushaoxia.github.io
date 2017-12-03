@@ -84,7 +84,7 @@
   </font>
  </defs>
  <defs class="TextShapeIndex">
-  <g ooo:slide="id1" ooo:id-list="id3 id4 id5 id6 id7 id8 id9 id10 id11 id12 id13 id14 id15 id16 id17 id18 id19 id20 id21 id22 id23 id24 id25 id26 id27 id28 id29 id30 id31 id32 id33 id34 id35 id36 id37 id38 id39"/>
+  <g ooo:slide="id1" ooo:id-list="id3 id4 id5 id6 id7 id8 id9 id10 id11 id12 id13 id14 id15 id16 id17 id18 id19 id20 id21 id22 id23 id24 id25 id26 id27 id28 id29 id30 id31 id32 id33 id34 id35 id36 id37 id38 id39 id40"/>
  </defs>
  <defs class="EmbeddedBulletChars">
   <g id="bullet-char-template(57356)" transform="scale(0.00048828125,-0.00048828125)">
@@ -214,33 +214,33 @@
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id10">
-        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="18500" width="1801" height="1401"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="19298"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="18700" width="1801" height="1090"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="19498"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id11">
-        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="19800" width="1801" height="1401"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="20598"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="20100" width="1801" height="1401"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="20898"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id12">
-        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="21100" width="1801" height="1401"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="21898"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="21600" width="1801" height="1401"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="22398"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id13">
-        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="22500" width="1801" height="1401"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="23298"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="23200" width="1801" height="1101"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="23998"><tspan fill="rgb(99, 192, 245)" stroke="none">检查</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.LineShape">
        <g id="id14">
-        <rect class="BoundingBox" stroke="none" fill="none" x="15352" y="23699" width="302" height="7402"/>
-        <path fill="none" stroke="rgb(99, 192, 245)" d="M 15539,23700 L 15502,30670"/>
-        <path fill="rgb(99, 192, 245)" stroke="none" d="M 15500,31100 L 15652,30651 15352,30649 15500,31100 Z"/>
+        <rect class="BoundingBox" stroke="none" fill="none" x="15350" y="25399" width="301" height="5702"/>
+        <path fill="none" stroke="rgb(99, 192, 245)" d="M 15500,25400 L 15500,30670"/>
+        <path fill="rgb(99, 192, 245)" stroke="none" d="M 15500,31100 L 15650,30650 15350,30650 15500,31100 Z"/>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
@@ -307,14 +307,14 @@
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id25">
-        <rect class="BoundingBox" stroke="none" fill="none" x="25700" y="23104" width="1801" height="1090"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="25950" y="23902"><tspan fill="rgb(99, 192, 245)" stroke="none">通知</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="25700" y="23604" width="1801" height="1090"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="25950" y="24402"><tspan fill="rgb(99, 192, 245)" stroke="none">通知</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id26">
-        <rect class="BoundingBox" stroke="none" fill="none" x="25700" y="24205" width="1801" height="1090"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="25950" y="25003"><tspan fill="rgb(99, 192, 245)" stroke="none">发起</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="25700" y="24505" width="1801" height="1090"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="25950" y="25303"><tspan fill="rgb(99, 192, 245)" stroke="none">发起</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.LineShape">
@@ -350,38 +350,38 @@
       </g>
       <g class="com.sun.star.drawing.CustomShape">
        <g id="id32">
-        <rect class="BoundingBox" stroke="none" fill="none" x="34799" y="15199" width="903" height="12204"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 34800,15200 C 35025,15200 35250,15708 35250,16216 L 35250,20283 C 35250,20792 35475,21300 35700,21300 35475,21300 35250,21808 35250,22317 L 35250,26384 C 35250,26892 35025,27401 34800,27401"/>
+        <rect class="BoundingBox" stroke="none" fill="none" x="34799" y="15199" width="903" height="9504"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 34800,15200 C 35025,15200 35250,15595 35250,15991 L 35250,19158 C 35250,19554 35475,19950 35700,19950 35475,19950 35250,20346 35250,20742 L 35250,23909 C 35250,24305 35025,24701 34800,24701"/>
         <path fill="none" stroke="rgb(52,101,164)" d="M 34800,15200 L 34800,15200 Z"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 35700,27401 L 35700,27401 Z"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 35700,24701 L 35700,24701 Z"/>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id33">
-        <rect class="BoundingBox" stroke="none" fill="none" x="35800" y="20500" width="1801" height="1928"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="36050" y="21298"><tspan fill="rgb(99, 192, 245)" stroke="none">等待</tspan></tspan><tspan class="TextPosition" x="36050" y="22136"><tspan fill="rgb(99, 192, 245)" stroke="none">数据</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="35800" y="18800" width="1801" height="1928"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="36050" y="19598"><tspan fill="rgb(99, 192, 245)" stroke="none">等待</tspan></tspan><tspan class="TextPosition" x="36050" y="20436"><tspan fill="rgb(99, 192, 245)" stroke="none">数据</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
        <g id="id34">
-        <rect class="BoundingBox" stroke="none" fill="none" x="34799" y="27799" width="703" height="4503"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 34800,27800 C 34975,27800 35150,27987 35150,28175 L 35150,29675 C 35150,29862 35325,30050 35500,30050 35325,30050 35150,30237 35150,30425 L 35150,31925 C 35150,32112 34975,32300 34800,32300"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 34800,27800 L 34800,27800 Z"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 35500,32300 L 35500,32300 Z"/>
+        <rect class="BoundingBox" stroke="none" fill="none" x="34777" y="24999" width="725" height="7304"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 34778,25000 C 34953,25000 35130,25536 35131,26072 L 35136,27578 C 35137,28114 35314,28650 35489,28650 35314,28650 35141,29186 35142,29722 L 35147,31228 C 35148,31764 34975,32300 34800,32300"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 34778,25000 L 34778,25000 Z"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 35500,32301 L 35500,32301 Z"/>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
        <g id="id35">
-        <rect class="BoundingBox" stroke="none" fill="none" x="35800" y="28901" width="3201" height="3604"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="36050" y="29699"><tspan fill="rgb(99, 192, 245)" stroke="none">将数据从</tspan></tspan><tspan class="TextPosition" x="36050" y="30537"><tspan fill="rgb(99, 192, 245)" stroke="none">内核复制</tspan></tspan><tspan class="TextPosition" x="36050" y="31375"><tspan fill="rgb(99, 192, 245)" stroke="none">到用户空</tspan></tspan><tspan class="TextPosition" x="36050" y="32213"><tspan fill="rgb(99, 192, 245)" stroke="none">间</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="35800" y="26501" width="3201" height="3604"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="36050" y="27299"><tspan fill="rgb(99, 192, 245)" stroke="none">将数据从</tspan></tspan><tspan class="TextPosition" x="36050" y="28137"><tspan fill="rgb(99, 192, 245)" stroke="none">内核复制</tspan></tspan><tspan class="TextPosition" x="36050" y="28975"><tspan fill="rgb(99, 192, 245)" stroke="none">到用户空</tspan></tspan><tspan class="TextPosition" x="36050" y="29813"><tspan fill="rgb(99, 192, 245)" stroke="none">间</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
        <g id="id36">
-        <rect class="BoundingBox" stroke="none" fill="none" x="7999" y="32644" width="21004" height="903"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 8000,32645 C 8000,32870 8875,33095 9750,33095 L 16750,33095 C 17625,33095 18500,33320 18500,33545 18500,33320 19375,33095 20250,33095 L 27250,33095 C 28125,33095 29001,32870 29001,32645"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 8000,32645 L 8000,32645 Z"/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 29001,33545 L 29001,33545 Z"/>
+        <rect class="BoundingBox" stroke="none" fill="none" x="7999" y="32642" width="21004" height="903"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 8000,32643 C 8000,32868 8875,33093 9750,33093 L 16750,33093 C 17625,33093 18500,33318 18500,33543 18500,33318 19375,33093 20250,33093 L 27250,33093 C 28125,33093 29001,32868 29001,32643"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 8000,32643 L 8000,32643 Z"/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 29001,33543 L 29001,33543 Z"/>
        </g>
       </g>
       <g class="com.sun.star.drawing.TextShape">
@@ -402,6 +402,12 @@
        <g id="id39">
         <rect class="BoundingBox" stroke="none" fill="none" x="29800" y="33400" width="4501" height="1090"/>
         <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="30050" y="34198"><tspan fill="rgb(99, 192, 245)" stroke="none">处理两个阶段</tspan></tspan></tspan></text>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.TextShape">
+       <g id="id40">
+        <rect class="BoundingBox" stroke="none" fill="none" x="14700" y="24204" width="1801" height="1090"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Microsoft YaHei" font-size="635px" font-weight="400"><tspan class="TextPosition" x="14950" y="25002"><tspan fill="rgb(99, 192, 245)" stroke="none">发起</tspan></tspan></tspan></text>
        </g>
       </g>
      </g>
