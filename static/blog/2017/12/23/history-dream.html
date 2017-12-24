@@ -6,11 +6,33 @@
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/code-light/prism.js"></script>
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/head.js"></script>
-<title>红楼‘梦’已完 —— 《红楼梦》影射终极大揭秘</title>
+<script type="text/javascript">
+			//载入事件
+			window.onload = function() {
+				appendDate();
+			}
+			//追加空格
+			function appendDate(){
+				var date = new Date();
+				var dateStr= date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+"日";
+				var text="";
+				text=text.concat("印象中的红楼梦,一直是儿女情长,繁琐家事,因此从未深入探究过。两周前,看到江南分享的一个帖子,从索隐的角度,挖掘红楼梦究竟是在写什么。帖子得出的结论是,红楼梦是使用春秋笔法,写明末清初的历史。");
+				text=text.concat("<br>&nbsp;&nbsp;");
+				text=text.concat("什么是春秋笔法?").concat(dateStr).concat(",");
+				text=text.concat("你在读这些文字,这件事情被记录下来了,被写进书里面了。后世的读者看到后,某年某月某日,某人读了什么文字。");
+				text=text.concat("读者会根据自己的见闻,想到这个可能写的是谁,是邻家碧玉还是帝都大大");
+				text=text.concat("----只描述情状,而不直白点出。");
+				document.getElementById("linghushaoxia").innerHTML+=text;
+			}
+			
+		</script>
+<title>红楼‘梦’已完</title>
 </head>
 <body>
 <p id="back-to-top"><a href="#top"><span></span>返回顶部</a></p>
 	<div class="container">
+		<a ><div id="linghushaoxia">&nbsp;&nbsp;</div>
+		</a>
 		<p>目录
 		<br>&nbsp;&nbsp;<a href="#1">1、红楼梦到底隐藏了什么真相</a>
 		<br>&nbsp;&nbsp;<a href="#2">2、开启红楼之谜的钥匙</a>
@@ -2956,7 +2978,9 @@
 		<div>
 			
 		</div>
-
+		<br>
+		<br>
+	<a href="http://bbs.tianya.cn/post-no05-417632-1.shtml">原贴</a>
 	</div>
 </body>
 </html>
