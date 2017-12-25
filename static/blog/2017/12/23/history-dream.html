@@ -7,11 +7,36 @@
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/code-light/prism.js"></script>
 	<script type="text/javascript" src="https://linghushaoxia.github.io/static/public/js/head.js"></script>
 <script type="text/javascript">
-			//载入事件
-			window.onload = function() {
+//js-ready
+		(function () {
+			   var ie = !!(window.attachEvent && !window.opera);
+			   var wk = /webkit\/(\d+)/i.test(navigator.userAgent) && (RegExp.$1 < 525);
+			   var fn = [];
+			   var run = function () { for (var i = 0; i < fn.length; i++) fn[i](); };
+			   var d = document;
+			   d.ready = function (f) {
+			      if (!ie && !wk && d.addEventListener)
+			      return d.addEventListener('DOMContentLoaded', f, false);
+			      if (fn.push(f) > 1) return;
+			      if (ie)
+			         (function () {
+			            try { d.documentElement.doScroll('left'); run(); }
+			            catch (err) { setTimeout(arguments.callee, 0); }
+			         })();
+			      else if (wk)
+			      var t = setInterval(function () {
+			         if (/^(loaded|complete)$/.test(d.readyState))
+			         clearInterval(t), run();
+			      }, 0);
+			   };
+			})();
+		</script>
+<script type="text/javascript">
+			document.ready(function(){
 				appendDate();
-			}
-			//追加空格
+				appendMusic();
+			});
+			//linghushaoxia
 			function appendDate(){
 				var date = new Date();
 				var dateStr= date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+"日";
@@ -24,8 +49,30 @@
 				text=text.concat("----只描述情状,而不直白点出。");
 				document.getElementById("linghushaoxia").innerHTML+=text;
 			}
-			
+			//add bg music
+			function appendMusic(){
+				var musicUrls="";
+				musicUrls=musicUrls.concat("题帕三绝-http://dl.stream.qqmusic.qq.com/C400002CJeNO4TH76D.m4a?vkey=4DF882D1D22D81B2706751C35EBFB0E324D78DFFC4D327B5722273AEA83905356F349B9F65C41C506A0BA327D1E70B6578157AF24F112654&guid=9337583042&uin=471390356&fromtag=66").concat(";");
+				musicUrls=musicUrls.concat("叹香菱-http://dl.stream.qqmusic.qq.com/C400003Bpiwj1scQ81.m4a?vkey=3F9DB073D0A139EECDBB78C2FAF891703A32C10C00BD685D8D6DF8F1FE78AD87E0560A1F15ADC7524FEC4D8549D06202E8C7D14B3B7B7C10&guid=9337583042&uin=471390356&fromtag=66").concat(";");
+				musicUrls=musicUrls.concat("枉凝眉-http://dl.stream.qqmusic.qq.com/C400003lT9uE41Cl7j.m4a?vkey=281506D02C1BB0247B653CBB5DCAC777AF9D5DB11B3AD5F10AA4616CF5894648340F6160D19178660341DD4F7BA6550A3514A3581AAE4B22&guid=9337583042&uin=471390356&fromtag=66").concat(";");
+				musicUrls=musicUrls.concat("红豆曲-http://dl.stream.qqmusic.qq.com/C4000039BDXP0XkIbu.m4a?vkey=9E89F5E9E25FDD4FFDEA243D1935EFEAE18AB864FAC702865C440FEB3BF7E8F99503B9AA63EBF4CDAF3A0A1448241DBA0A07B3905216B13C&guid=9337583042&uin=471390356&fromtag=66").concat(";");
+				musicUrls=musicUrls.concat("葬花吟-http://dl.stream.qqmusic.qq.com/C400003vjNrl3HjK7K.m4a?vkey=DE38ABE8D51E707848B53F1C8C94DF8F0E06BABED91860522B4A19C0B8E84BB853323BAB56B433D20C68FFB78E4A15C2CE0FBDAF1D4EBAD3&guid=9337583042&uin=471390356&fromtag=66").concat(";");
+				var musicArrs=musicUrls.split(";");
+				//random
+				var index=Math.floor(Math.random()*musicArrs.length);
+				var nameAndUrl = musicArrs[index];
+				//real url
+				var url = nameAndUrl.split("-")[1];
+				var musicCode = "";
+				musicCode=musicCode.concat("<audio  autoplay=\"autoplay\">");
+				musicCode=musicCode.concat("<source src=\"").concat(url).concat("\"").concat("/>");
+				musicCode=musicCode.concat("</audio>");
+				document.getElementById("music").innerHTML+=musicCode;
+				//log the name to the console
+				console.log(nameAndUrl.split("-")[0]);
+			}
 		</script>
+		
 <title>红楼‘梦’已完</title>
 </head>
 <body>
@@ -2981,6 +3028,7 @@
 		<br>
 		<br>
 	<a href="http://bbs.tianya.cn/post-no05-417632-1.shtml">原贴</a>
+	<div id="music"/>
 	</div>
 </body>
 </html>
