@@ -51,24 +51,24 @@
 			//add bg music
 			function appendMusic(){
 				var musicUrls="";
-				musicUrls=musicUrls.concat("题帕三绝-http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/PoetrisInHandkerchief.m4a").concat(";");
-				musicUrls=musicUrls.concat("叹香菱-http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/sympathizeXiangYing.m4a").concat(";");
-				musicUrls=musicUrls.concat("枉凝眉-http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/frownWithoutEffcet.m4a").concat(";");
-				musicUrls=musicUrls.concat("红豆曲-http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/theSongRedBeans.m4a").concat(";");
-				musicUrls=musicUrls.concat("葬花吟-http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/BuryTheFlowers.m4a").concat(";");
+				musicUrls=musicUrls.concat("题帕三绝#http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/PoetrisInHandkerchief.m4a").concat(";");
+				musicUrls=musicUrls.concat("叹香菱#http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/sympathizeXiangYing.m4a").concat(";");
+				musicUrls=musicUrls.concat("枉凝眉#http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/frownWithoutEffcet.m4a").concat(";");
+				musicUrls=musicUrls.concat("红豆曲#http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/theSongRedBeans.m4a").concat(";");
+				musicUrls=musicUrls.concat("葬花吟#http://qqmusic20150501.oss-cn-shenzhen.aliyuncs.com/history-dream/BuryTheFlowers.m4a").concat(";");
 				var musicArrs=musicUrls.split(";");
 				//random
 				var index=Math.floor(Math.random()*musicArrs.length);
 				var nameAndUrl = musicArrs[index];
 				//real url
-				var url = nameAndUrl.split("-")[1];
+				var url = nameAndUrl.split("#")[1];
 				var musicCode = "";
 				musicCode=musicCode.concat("<audio  autoplay=\"autoplay\">");
 				musicCode=musicCode.concat("<source src=\"").concat(url).concat("\"").concat("/>");
 				musicCode=musicCode.concat("</audio>");
 				document.getElementById("music").innerHTML+=musicCode;
 				//log the name to the console
-				console.log(nameAndUrl.split("-")[0]);
+				console.log(nameAndUrl.split("#")[0]);
 			}
 		</script>
 		
