@@ -1,5 +1,5 @@
 (function(PIXI, window, document, undefined) {
-  var deepLoveCanvas = function(c, cw, ch) {
+  var waterfallCanvas = function(c, cw, ch) {
     var _this = this;
     this.c = c;
     this.ctx = c.getContext('2d');
@@ -130,12 +130,12 @@
     }
   };
   if (isCanvasSupported()) {
-    var c = document.getElementById('deepLove');
-    var cw = c.width = Math.max(document.getElementById('deepLove').scrollWidth, document.getElementById('deepLove').offsetWidth, document.getElementById('deepLove').clientWidth, document.getElementById('deepLove').scrollWidth, document.getElementById('deepLove').offsetWidth);
-    var ch = c.height = Math.max(document.getElementById('deepLove').scrollHeight, document.getElementById('deepLove').offsetHeight, document.getElementById('deepLove').clientHeight, document.getElementById('deepLove').scrollHeight, document.getElementById('deepLove').offsetHeight);
-    var deepLove = new deepLoveCanvas(c, cw, ch);
+    var c = document.getElementById('waterfall');
+    var cw = c.width = Math.max(document.getElementById('waterfall').scrollWidth, document.getElementById('waterfall').offsetWidth, document.getElementById('waterfall').clientWidth, document.getElementById('waterfall').scrollWidth, document.getElementById('waterfall').offsetWidth);
+    var ch = c.height = Math.max(document.getElementById('waterfall').scrollHeight, document.getElementById('waterfall').offsetHeight, document.getElementById('waterfall').clientHeight, document.getElementById('waterfall').scrollHeight, document.getElementById('waterfall').offsetHeight);
+    var waterfall = new waterfallCanvas(c, cw, ch);
     setupRAF();
-    deepLove.init();
+    waterfall.init();
   } /* Second plugin */
   var w, h, renderer, stage, waveGraphics, partGraphics, waveTexture, partTexture, waveCount, partCount, waves, parts;
 
