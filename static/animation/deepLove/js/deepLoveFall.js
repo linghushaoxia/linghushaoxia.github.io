@@ -1,4 +1,4 @@
-(function(PIXI, window, document, undefined) {
++!~-(function(PIXI, window, document, undefined) {
   var waterfallCanvas = function(c, cw, ch) {
     var _this = this;
     this.c = c;
